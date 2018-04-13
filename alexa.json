@@ -1,0 +1,200 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "vivo i. p. l.",
+            "intents": [
+                {
+                    "name": "hellointent",
+                    "slots": [],
+                    "samples": [
+                        "say hello",
+                        "hello",
+                        "to start ipl",
+                        "to start",
+                        "hello ipl",
+                        "start ipl",
+                        "open ipl"
+                    ]
+                },
+                {
+                    "name": "dateintent",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "datetype"
+                        }
+                    ],
+                    "samples": [
+                        "for schedule for {date}",
+                        "for schedule of {date}",
+                        "ask vivo i. p. l. schedule of {date} april",
+                        "schedule for {date}",
+                        "{date}",
+                        "schedule of {date}",
+                        "match on {date}",
+                        "on {date}",
+                        "whose match is on {date}"
+                    ]
+                },
+                {
+                    "name": "teamintent",
+                    "slots": [
+                        {
+                            "name": "team",
+                            "type": "teamtype"
+                        }
+                    ],
+                    "samples": [
+                        "{team}",
+                        "{team} team",
+                        "{team} squad",
+                        "team of {team}",
+                        "squad of {team}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "restart",
+                        "forget it",
+                        "never mind",
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "the end",
+                        "ipl over",
+                        "game over",
+                        "turn off",
+                        "shut down",
+                        "stup up",
+                        "off",
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "can you help me",
+                        "help me",
+                        "help"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "datetype",
+                    "values": [
+                        {
+                            "id": "d",
+                            "name": {
+                                "value": "10 april  18"
+                            }
+                        },
+                        {
+                            "id": "c",
+                            "name": {
+                                "value": "9 april 18"
+                            }
+                        },
+                        {
+                            "id": "b",
+                            "name": {
+                                "value": "8 april 18"
+                            }
+                        },
+                        {
+                            "id": "a",
+                            "name": {
+                                "value": "7 april 18",
+                                "synonyms": [
+                                    "7 april",
+                                    "7th april"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "teamtype",
+                    "values": [
+                        {
+                            "id": "srh",
+                            "name": {
+                                "value": "Sunrisers Hyderabad",
+                                "synonyms": [
+                                    "srh"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "dd",
+                            "name": {
+                                "value": "Delhi Daredevils",
+                                "synonyms": [
+                                    "dd"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "kp",
+                            "name": {
+                                "value": "Kings XI Punjab",
+                                "synonyms": [
+                                    "kXIp"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "kkr",
+                            "name": {
+                                "value": "Kolkata Knight Riders",
+                                "synonyms": [
+                                    "kkr"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "mi",
+                            "name": {
+                                "value": " Mumbai Indians",
+                                "synonyms": [
+                                    "mi"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "rr",
+                            "name": {
+                                "value": "Rajasthan Royals",
+                                "synonyms": [
+                                    "rr"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "rcb",
+                            "name": {
+                                "value": "Royal Challengers Bangalore",
+                                "synonyms": [
+                                    "rcb"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "csk",
+                            "name": {
+                                "value": "Chennai Super Kings",
+                                "synonyms": [
+                                    "csk"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
